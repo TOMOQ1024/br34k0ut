@@ -10,6 +10,8 @@
 		782960EB2A36FEC7007EEF5C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782960EA2A36FEC7007EEF5C /* GameScene.swift */; };
 		782960EE2A37042F007EEF5C /* Paddle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782960ED2A37042F007EEF5C /* Paddle.swift */; };
 		D940BA49BA3AACF7D45673E5 /* Pods_BR34K0UT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE5C70E2989D6D5D048B349 /* Pods_BR34K0UT.framework */; };
+		E441E4E12A39AB2C004CBF5F /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = E441E4E02A39AB2B004CBF5F /* Ball.swift */; };
+		E441E4E42A39B641004CBF5F /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E441E4E32A39B641004CBF5F /* CGPoint.swift */; };
 		E484162A2A34E21400F55D6B /* BR34K0UTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48416292A34E21400F55D6B /* BR34K0UTApp.swift */; };
 		E484162C2A34E21400F55D6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484162B2A34E21400F55D6B /* ContentView.swift */; };
 		E484162E2A34E21600F55D6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E484162D2A34E21600F55D6B /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 		782960EA2A36FEC7007EEF5C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		782960ED2A37042F007EEF5C /* Paddle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paddle.swift; sourceTree = "<group>"; };
 		9CB22EFF1606DC88CD2BE7DB /* Pods-BR34K0UT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BR34K0UT.release.xcconfig"; path = "Target Support Files/Pods-BR34K0UT/Pods-BR34K0UT.release.xcconfig"; sourceTree = "<group>"; };
+		E441E4E02A39AB2B004CBF5F /* Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
+		E441E4E32A39B641004CBF5F /* CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
 		E48416262A34E21400F55D6B /* BR34K0UT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BR34K0UT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48416292A34E21400F55D6B /* BR34K0UTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BR34K0UTApp.swift; sourceTree = "<group>"; };
 		E484162B2A34E21400F55D6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				782960ED2A37042F007EEF5C /* Paddle.swift */,
+				E441E4E02A39AB2B004CBF5F /* Ball.swift */,
 			);
 			path = Actors;
 			sourceTree = "<group>";
@@ -63,6 +68,14 @@
 				782960EA2A36FEC7007EEF5C /* GameScene.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E441E4E22A39B631004CBF5F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E441E4E32A39B641004CBF5F /* CGPoint.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		E484161D2A34E21400F55D6B = {
@@ -86,6 +99,7 @@
 		E48416282A34E21400F55D6B /* BR34K0UT */ = {
 			isa = PBXGroup;
 			children = (
+				E441E4E22A39B631004CBF5F /* Utils */,
 				782960EF2A373224007EEF5C /* Scenes */,
 				782960EC2A3703EF007EEF5C /* Actors */,
 				E48416292A34E21400F55D6B /* BR34K0UTApp.swift */,
@@ -229,7 +243,9 @@
 			files = (
 				782960EB2A36FEC7007EEF5C /* GameScene.swift in Sources */,
 				782960EE2A37042F007EEF5C /* Paddle.swift in Sources */,
+				E441E4E12A39AB2C004CBF5F /* Ball.swift in Sources */,
 				E484162C2A34E21400F55D6B /* ContentView.swift in Sources */,
+				E441E4E42A39B641004CBF5F /* CGPoint.swift in Sources */,
 				E484162A2A34E21400F55D6B /* BR34K0UTApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

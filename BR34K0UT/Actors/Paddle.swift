@@ -16,11 +16,15 @@ class Paddle {
     let moveSpeed = CGFloat(2)
     init(_ scene: SKScene){
         midX = scene.frame.midX
-        node = SKShapeNode(rect: CGRect(
+        let rect = CGRect(
             x: midX - width/2, y:100,
             width: width, height: height
-        ))
+        )
+        node = SKShapeNode(rect: rect)
         dest = CGFloat(0)
+        node.physicsBody = SKPhysicsBody(polygonFrom: CGPath(rect: rect, transform: nil))
+//        node.physicsBody?.affectedByGravity = false
+        node.physicsBody?.isDynamic = false
     }
     func move(){
         let vec = self.dest - self.node.position.x - self.midX
